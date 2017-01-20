@@ -1,77 +1,129 @@
 <!doctype html>
 <html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Music History</title>
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
 	
-	<head>
-		<link rel="stylesheet" href="css/main.css">
-		<meta charset="utf-8">
-		<title>Music History</title>
-	</head>
-	
-	<div class="page-box">
-	<header>
-		<nav>
-			<ul>
-				<li><a href="index.html">View Music</a> |</li>
-				<li><a href="#">Add Music</a> |</li>
-				<li><a href="#">Profile</a></li>
-			</ul>
-		</nav>
-	</header>	
+<body>
+
+		<header>
+			<div class="col-xs-12">	
+			<nav>
+				<ul>
+					<li><a href="index.html">View Music</a> |</li>
+					<li><a href="#">Add Music</a> |</li>
+					<li><a href="#">Profile</a></li>
+				</ul>
+			</nav>	
+			</div>	
+		</header>	
+				
+		<div id="row">
+
+			<div class="col-xs-4">
+				<div>
+					<label for="songLength">Song length:</label><br>
+					<input type="range" id="songLengthSlider" min="0" max="100" step="1">
+				</div>
+
+				<div>
+					<label for="artist">Artist:</label>		
+					<select type="select" name="artists" id="artist-select">
+						<option selected disabled>Options</option>
+						<option>Artist 1</option>
+						<option>Artist 2</option>
+						<option>Artist 3</option>
+						<option>Artist 4</option>
+					</select>
+				</div>
+				
+				<div>
+					<label for="album">Album:</label>
+					<select type="select" name="albums" id="album-select">
+						<option selected disabled>Options</option>
+						<option value="">Album 1</option>
+						<option value="">Album 2</option>
+						<option value="">Album 3</option>
+						<option value="">Album 4</option>
+						<option value="">Album 5</option>
+						<option value="">Album 6</option>
+						<option value="">Album 7</option>
+						<option value="">Album 8</option>
+						<option value="">Album 9</option>
+					</select>
+				</div>
+					
+				<div id="genre-select">	
+					<label for="genre">Genre:</label><br>
+					<div id="radio-col1">
+						<input type="checkbox" name="album" value="Rock">Rock<br>
+						<input type="checkbox" name="album" value="Rap ">Pop<br>
+						<input type="checkbox" name="album" value="Country">Country<br>
+					</div>
+					<div id="radio-col2">
+						<input type="checkbox" name="album" value=" ">Jazz<br>
+						<input type="checkbox" name="album" value=" ">Hip Hop<br>
+						<input type="checkbox" name="album" value=" ">Genre 6<br>
+					</div>	
+					<button type="submit" id="filter-button">Filter</button>
+				</div>
+			</div>
+				
+			<section class="col-xs-8">
+				<div>
+					<h1 id="song-title">SONG 1</h1>
+					<ul>
+						<li>artist |</li>
+						<li>album |</li>
+						<li>genre</li>
+					</ul>
+				</div>
+
+				<div>
+					<h1 id="song-title">SONG 2</h1>
+					<ul>
+						<li>artist |</li>
+						<li>album |</li>
+						<li>genre</li>
+					</ul>
+				</div>
+
+				<div>
+					<h1 class="song-title">SONG 3</h1>
+					<ul>
+						<li>artist |</li>
+						<li>album |</li>
+						<li>genre</li>
+					</ul>					
+				</div>
+				<div>
+					<h1 class="song-title">SONG 4</h1>
+					<ul>
+						<li>artist |</li>
+						<li>album |</li>
+						<li>genre</li>
+					</ul>
+				</div>
+				<div>
+					<h1 class="song-title">SONG 5</h1>
+					<ul>
+						<li>artist |</li>
+						<li>album |</li>
+						<li>genre</li>
+					</ul>
+				</div>
+			</section><!-- end of songlist bar -->
 		
-	<body>
-		<div class="body-box">
-			<section class="filter-bar">
-				<div id="song-length">
-					<p>Song length:</p>
-					//song length selector bar//
-				</div>	
-				<div>
-					<p>Artist:</p>
-					//artist selector//
-				</div>
-				<div>
-					<p>Album:</p>
-					//album selector//
-				</div>
-				<div>
-					<p>Genre:</p>
-					//genre selector//
-				</div>
-			</section>
-			
-			<section class="songlist-bar">
-				<div>
-					<h1 class="song-title">SONG NAME</h1>
-					<ul>
-						<li>artist |</li>
-						<li>album |</li>
-						<li>genre</li>
-					</ul>
-				</div>
 
-				<div>
-					<h1 id="song-title">SONG NAME</h1>
-					<ul>
-						<li>artist |</li>
-						<li>album |</li>
-						<li>genre</li>
-					</ul>
-				</div>
-
-				<div>
-					<h1 class="song-title">SONG NAME</h1>
-					<ul>
-						<li>artist |</li>
-						<li>album |</li>
-						<li>genre</li>
-					</ul>
-				</div>
-			</section>
-		</div>
-	</body>
-	</div>
+</body>
 	
-	<footer>
-	</footer>
+<footer>
+</footer>
 
 </html>
