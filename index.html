@@ -26,7 +26,7 @@
 				
 		<div id="row">
 
-			<div class="col-xs-4">
+			<div class="col-xs-4"><!--Start filter column on left-->
 				<div>
 					<label for="songLength">Song length:</label><br>
 					<input type="range" id="songLengthSlider" min="0" max="100" step="1">
@@ -73,54 +73,20 @@
 					</div>	
 					<button type="submit" id="filter-button">Filter</button>
 				</div>
-			</div>
+			</div><!-- End filter bar on left -->
 				
-			<section class="col-xs-8">
+			<section class="col-xs-8"><!-- Start song bar on right -->
+				
 				<div>
-					<h1 id="song-title">SONG 1</h1>
-					<ul>
-						<li>artist |</li>
-						<li>album |</li>
-						<li>genre</li>
+					<ul id="songs">
+						
 					</ul>
 				</div>
-
-				<div>
-					<h1 id="song-title">SONG 2</h1>
-					<ul>
-						<li>artist |</li>
-						<li>album |</li>
-						<li>genre</li>
-					</ul>
-				</div>
-
-				<div>
-					<h1 class="song-title">SONG 3</h1>
-					<ul>
-						<li>artist |</li>
-						<li>album |</li>
-						<li>genre</li>
-					</ul>					
-				</div>
-				<div>
-					<h1 class="song-title">SONG 4</h1>
-					<ul>
-						<li>artist |</li>
-						<li>album |</li>
-						<li>genre</li>
-					</ul>
-				</div>
-				<div>
-					<h1 class="song-title">SONG 5</h1>
-					<ul>
-						<li>artist |</li>
-						<li>album |</li>
-						<li>genre</li>
-					</ul>
-				</div>
-			</section><!-- end of songlist bar -->
+				
+			</section><!-- end songlist bar -->
 		
 
+<script type="text/javascript" src="javascripts/songs.js"></script>
 </body>
 	
 <footer>
