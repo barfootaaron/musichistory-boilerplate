@@ -27,6 +27,7 @@ function findLetters() {
 
 			//Create <li> for each loop
 			var li = document.createElement("li");
+			var br = document.createElement("br");
 		
 			//Create ID names
 			counter += 1;
@@ -36,10 +37,10 @@ function findLetters() {
 			var x = songs[i].replace(/>/g, "-");
 			var y = x.replace(/\*|!|@|\(|/g, "");
 
-			
-			newSongs += y;
+			//Add new song string to list
+			newSongs += y += "<br>";
 
-			//
+			//Create new li's and assign to new songs
 			li.innerHTML = y;
 			li.id = keyName;
 

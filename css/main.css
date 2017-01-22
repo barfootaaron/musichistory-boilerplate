@@ -1,15 +1,10 @@
 /* BASE STYLE */ 
-
 body {
 	font-family: 'Varela Round', sans-serif;
 }
 
-
-/* HEADER */
-
-
+/* Header-Nav */
 nav {
-
 	margin: 15px 15px 15px 15px;
 }
 
@@ -18,40 +13,40 @@ nav {
 	background-color: #FFB4B0;
 	text-align: left;
 	height: 4em;
-	width: 92%;
+	width: 92.1%;
 	margin: 1em;
 	background-color: #FFB4B0;
 	padding-top: 1.5px;
-	padding-left: 1em;
 	list-style-type: none;
 }
 
-nav ul {
-
+.col-xs-12 ul {
+	text-align: left;
+	margin: 0;
+	padding: 0;
 }
 
 nav li {
-	float: left;
 	padding-right: .3em;
 	display: inline-block;
+	text-align: left;
 }
 
-a:first-child {
+a:visited {
 	color: black;
-	text-decoration: none;
+	text-align: left;
+	margin: 0;
+	padding: 0;
 }
 
-/* Body Styling */ 
-
-
-
-
+/* Begin Body Styling */ 
 /* Filter bar on left of body */
 .col-xs-4 {
 	max-width: 30%;
+	min-width: 150px;
 	max-height: 100%;
 	border: 3px solid;
-	height: 40em;
+	height: 35em;
 	background-color: #4DD7FA;
 	margin: 0 1em 1em 1em;
 	margin-top: 0 !important;
@@ -70,7 +65,7 @@ input[type="range"] {
   border: 3px solid black;
   background-color: #fff;
   margin-top: 1em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   margin-left: .5em;
 }
 
@@ -83,17 +78,9 @@ input[type="range"]::-webkit-slider-thumb {
   background-color: lightgrey;
 }
 
-#filter-button {
-	border: solid 3px black;
-	background-color: lightgrey;
-	border-radius: 5px;
-	width: 60%;
-	display: block;
-	margin: 0 auto;
-	text-align: center;
-	font-size: 1.1em;
-	margin-top: 12em;
-}
+input[type="range"]::-moz-range-progress {
+  background-color: grey; 
+ } 
 
 select {
 	width: 90%;
@@ -116,7 +103,6 @@ select {
 
 #radio-col1,
 #radio-col2 {
-	margin-right;
 	line-height: 2em;
 	text-orientation: 
 }
@@ -144,7 +130,19 @@ input[type="radio"] {
 }
 
 label {
-	border-top: 3em;
+	margin-top: 1em;
+}
+
+#filter-button {
+	border: solid 3px black;
+	background-color: lightgrey;
+	border-radius: 5px;
+	width: 60%;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 1.1em;
+	margin-top: 9em;
 }
 
 
@@ -153,37 +151,23 @@ label {
 	display: inline-block;
 	border: 3px solid black;
 	background-color: #FEFAC0;
-	height: 40em;
+	height: 35em;
 	padding-left: 0em;
 	width: 60%;
 	color: #785616;
+	line-height: 3em;
 }
 
 #songs {
 	margin-top: 2em;
-	font-size: 1.2em;
+	font-size: .9em;
+	margin-left: 0;
+	padding-left: 2em;
 }
 
 ul li {
 	display: inline;
 }
 
-#song1,
-#song2,
-#song3,
-#song4,
-#song {
-	font-size: 10px
-	color: #785616;
-}
 
-#songlist-bar li {
-	display: inline;
-	list-style-type: : none;
-}
 
-.area-container {
-	display: inline-block;
-	flex-direction: row;
-	justify-content: space-between;
-}
