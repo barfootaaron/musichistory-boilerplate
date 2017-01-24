@@ -11,18 +11,20 @@
 </head>
 	
 <body>
+	<header>
+		<div id="nav-bar" class="col-xs-12">	
+		<nav>
+			<ul>
+				<li><a href="index.html" id="link-home">List Music</a></li>
+				<li><strong> | </strong></li>
+				<li><a href="#" id="link-add">Add Music</a></li>
+			</ul>
+		</nav>	
+		</div>	
+	</header>	
 
-		<header>
-			<div class="col-xs-12">	
-			<nav>
-				<ul>
-					<li><a href="index.html">View Music</a> |</li>
-					<li><a href="#">Add Music</a> |</li>
-					<li><a href="#">Profile</a></li>
-				</ul>
-			</nav>	
-			</div>	
-		</header>	
+	<!--Start Home (View Music) page-->
+	<section id="home-view">
 				
 		<div id="row">
 
@@ -46,51 +48,84 @@
 						<option></option>
 					</select>
 				</div>
-				
+					
 				<div>
 					<label for="album">Album:</label>
 					<select type="select" name="albums" id="album-select">
 						<option selected disabled>Options</option>
-						<option value="">Album 1</option>
-						<option value="">Album 2</option>
-						<option value="">Album 3</option>
-						<option value="">Album 4</option>
-						<option value="">Album 5</option>
-						<option value="">Album 6</option>
-						<option value="">Album 7</option>
-						<option value="">Album 8</option>
-						<option value="">Album 9</option>
+						<option value="American Beauty">American Beauty</option>
+						<option value="Eliminator">Eliminator</option>
+						<option value="Breakfast in America">Breakfast in America</option>
+						<option value="The Wall">The Wall</option>
+						<option value="Appetite for Destruction">Appetite for Destruction</option>
+						<option value="Jagged Little Pill">Jagged Little Pill</option>
+						<option value="The Best of Marvin Gaye">The Best of Marvin Gaye</option>
 					</select>
 				</div>
 					
 				<div id="genre-select">	
 					<label for="genre">Genre:</label><br>
-					<div id="radio-col1">
-						<input type="checkbox" name="album" value="rock">Rock<br>
-						<input type="checkbox" name="album" value="pop">Pop<br>
-						<input type="checkbox" name="album" value="blues">Blues<br>
-					</div>
-					<div id="radio-col2">
-						<input type="checkbox" name="album" value="jazz">Jazz<br>
-						<input type="checkbox" name="album" value="hiphop">Hip Hop<br>
-						<input type="checkbox" name="album" value="classical">Classical<br>
-					</div>	
-					<button type="submit" id="filter-button">Filter</button>
-				</div>
-			</div><!-- End filter bar on left -->
-				
-			<section class="col-xs-8"><!-- Start song bar on right -->
-				
-				<div>
-					<ul id="songs">
 						
-					</ul>
-				</div>
-				
-			</section><!-- end songlist bar -->
+						<div id="radio-col1">
+							<input type="checkbox" name="genre" value="rock">
+							<label>Rock</label><br>
+
+							<input type="checkbox" name="genre" value="pop">
+							<label>Pop</label><br>
+							
+							<input type="checkbox" name="genre" value="blues">
+							<label>Blues</label><br>
+						</div>
+						
+						<div id="radio-col2">
+							
+							<input type="checkbox" name="genre" value="jazz">
+							<label>Jazz</label><br>
+							
+							<input type="checkbox" name="genre" value="hiphop">
+							<label>Hip Hop</label><br>
+							
+							<input type="checkbox" name="genre" value="classical">
+							<label>Classical</label><br>
+						</div>	
+						
+						<button type="submit" id="filter-button">Filter</button>
+					</div>
+				</div><!-- End filter bar on left -->
+					
+				<section class="col-xs-8"><!-- Start song bar on right -->
+					
+					<div>
+						<ul id="songs">
+						</ul>
+					</div>
+					
+				</section><!-- End songlist bar -->
+			</div>	
+	</section><!--End Home(View Music) page-->	
+	
+	<!--Start Add Music page-->
+	<section class="hidden" id="add-view">
+		
+		<div id="add-view-body" class="col-xs-12">
+			<label>Enter a song name:</label>
+			<input type="text" id="songNameEntered"><br>
+
+			<label>Artist name:</label>
+			<input type="text" id="artistNameEntered"><br>
+
+			<label>Album name:</label>
+			<input type="text" id="albumNameEntered"><br>
+
+			<button id="add-button" type="input">Add</button>
+		</div>	
+	
+	</section>	
 		
 
-<script type="text/javascript" src="javascripts/songs.js"></script>
+<script type="text/javascript" src="javascripts/home.js"></script>
+<script type="text/javascript" src="javascripts/add.js"></script>
+
 </body>
 	
 <footer>
