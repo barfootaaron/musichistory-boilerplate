@@ -5,33 +5,34 @@
 	<meta charset="utf-8">
 	<title>Music History</title>
 	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="lib/node_modules/jquery/dist/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 	
 <body>
-	<header>
+	<header class="row">
 		<div id="nav-bar" class="col-xs-12">	
 		<nav>
 			<ul>
-				<li><a href="index.html" id="link-home">List Music</a></li>
+				<li><a href="#" id="list-music">List Music</a></li>
 				<li><strong> | </strong></li>
-				<li><a href="#" id="link-add">Add Music</a></li>
+				<li><a href="#" id="add-music">Add Music</a></li>
+				<li><strong> | </strong></li>
+				<li><a href="#">Profile</a></li>
 			</ul>
 		</nav>	
 		</div>	
 	</header>	
 
 	<!--Start Home (View Music) page-->
-	<section id="home-view">
+	<section id="list-view">
 				
 		<div id="row">
 
 			<div class="col-xs-4"><!--Start filter column on left-->
 				<div>
 					<label for="songLength">Song length:</label><br>
-					<input type="range" id="songLengthSlider" min="0" max="100" step="1">
+					<input type="range" id="songLengthSlider" min="0.01" max="10:00" value="5:00" step=":30">
 				</div>
 
 				<div>
@@ -42,7 +43,7 @@
 						<option>ZZ Top</option>
 						<option>Supertramp</option>
 						<option>Pink Floyd</option>
-						<option>Guns & Roses</option>
+						<option>Guns n Roses</option>
 						<option>Alanis Morisette</option>
 						<option>Marvin Gaye</option>
 						<option></option>
@@ -63,74 +64,77 @@
 					</select>
 				</div>
 					
-				<div id="genre-select">	
+				<div id="genre-select" class="row">	
 					<label for="genre">Genre:</label><br>
 						
-						<div id="radio-col1">
-							<input type="checkbox" name="genre" value="rock">
+						<div id="radio-col1" class="col-xs-5">
+							<input type="checkbox" class="checkbox-primary" name="genre" value="rock">
 							<label>Rock</label><br>
 
-							<input type="checkbox" name="genre" value="pop">
+							<input type="checkbox" class="checkbox-primary" name="genre" value="pop">
 							<label>Pop</label><br>
 							
-							<input type="checkbox" name="genre" value="blues">
+							<input type="checkbox" class="checkbox-primary" name="genre" value="blues">
 							<label>Blues</label><br>
 						</div>
 						
-						<div id="radio-col2">
-							<input type="checkbox" name="genre" value="jazz">
+						<div id="radio-col2" class="col-xs-5">
+							<input type="checkbox" class="checkbox-primary" name="genre" value="jazz">
 							<label>Jazz</label><br>
 							
-							<input type="checkbox" name="genre" value="hiphop">
+							<input type="checkbox" class="checkbox-primary" name="genre" value="hiphop">
 							<label>Hip Hop</label><br>
 							
-							<input type="checkbox" name="genre" value="classical">
+							<input type="checkbox" class="checkbox-primary" name="genre" value="classical">
 							<label>Classical</label><br>
 						</div>	
 						
-						<button type="submit" id="moreButton">More songs</button>
+						<button type="button" id="filterButton">Filter songs</button>
 					</div>
 				</div><!-- End filter bar on left -->
 					
-				<section id="main" class="col-xs-8"><!-- Start song bar on right -->
-					
-					<div id="song--0" class="song">
-		      			<h2 class="songTitle">SONG_NAME</h2><br>
-		      			<ul class="songInfo">
-		       				<li class="col-xs-12 col-sm-2">SONG_ARTIST</li>
-		       				<li class="col-xs-12 col-sm-2">SONG_ALBUM</li>
-		        			<li class="col-xs-12 col-sm-2"><input type="button" id="deleteButton--!" value="delete"></li>
-		      			</ul>
+				<section id="songContainer" class="col-xs-8"><!-- Start song bar on right -->
+		      		
+		      		<div id="songsDiv"></div>
 
-	    			</div>
+	    			<div id="more-button-div">
+						<button type="button" id="moreButton">Load Songs</button>
+					</div>
 				
 				</section><!-- End songlist bar -->
 			
 			</div>	
-	</section><!--End Home(View Music) page-->	
+	</section><!-- End List-View -->	
 	
 	<!--Start Add Music page-->
-	<section class="hidden" id="add-view">
+	<section class="hidden row" id="add-view">
 		
 		<div id="add-view-body" class="col-xs-12">
-			<label>Enter a song name:</label>
-			<input type="text" id="songNameEntered"><br>
 
-			<label>Artist name:</label>
-			<input type="text" id="artistNameEntered"><br>
+				<div id="addSongForm">
+					<h2>Add new song</h2>
+					<br>
 
-			<label>Album name:</label>
-			<input type="text" id="albumNameEntered"><br>
+					<label class="addPgLabels">Enter a song name:</label><br>
+					<input type="text" id="songNameEntered"><br>
 
-			<button id="add-button" type="input">Add</button>
+					<label class="addPgLabels">Artist name:</label><br>
+					<input type="text" id="artistNameEntered"><br>
+
+					<label class="addPgLabels">Album name:</label><br>
+					<input type="text" id="albumNameEntered"><br>
+
+					<label class="addPgLabels">Genre:</label><br>
+					<input type="text" id="genreEntered"><br>
+
+					<button id="addButton" type="input">Add</button>
+				</div>
+
 		</div>	
 	
 	</section>	
 		
-
-<!-- <script type="text/javascript" src="javascripts/home.js"></script> -->
-	<script type="text/javascript" src="javascripts/add.js"></script> 
-	<script type="text/javascript" src="javascripts/main.js"></script>
+	<script type="text/javascript" src="dist/app.js"></script>
 
 </body>
 	

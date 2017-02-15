@@ -1,23 +1,29 @@
-[
-	{
-		"name": "Sugar Magnolia",
-		"artist": "Grateful Dead",
-		"album": "John"
-	},
-	{
-		"name": "Legs",
-		"artist": "ZZTop",
-		"album": "Eliminator"
-	},
-	{
-		"name": "The Logical Song",
-		"artist": "Supertramp",
-		"album": "Breakfast in America"
-	},
-	{
-		"name": "Welcome to the Jungle",
-		"artist": "Guns & Roses",
-		"album": "Appetite for Destruction"
-	}
-	
-]
+{
+	"songs": [
+		{
+			"name": "Sugar Magnolia",
+			"artist": "Grateful Dead",
+			"album": "John",
+			"genre": "Rock"
+		},
+		{
+			"name": "Legs",
+			"artist": "ZZTop",
+			"album": "Eliminator",
+			"genre": "Hip Hop"
+		},
+		{
+			"name": "The Logical Song",
+			"artist": "Supertramp",
+			"album": "Breakfast in America",
+			"genre": "Blues"
+		},
+		{
+			"name": "Welcome to the Jungle",
+			"artist": "Guns n Roses",
+			"album": "Appetite for Destruction",
+			"genre": "Pop"
+		}
+		
+	]
+}
