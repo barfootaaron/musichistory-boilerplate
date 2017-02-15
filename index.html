@@ -78,7 +78,6 @@
 						</div>
 						
 						<div id="radio-col2">
-							
 							<input type="checkbox" name="genre" value="jazz">
 							<label>Jazz</label><br>
 							
@@ -89,18 +88,24 @@
 							<label>Classical</label><br>
 						</div>	
 						
-						<button type="submit" id="filter-button">Filter</button>
+						<button type="submit" id="moreButton">More songs</button>
 					</div>
 				</div><!-- End filter bar on left -->
 					
-				<section class="col-xs-8"><!-- Start song bar on right -->
+				<section id="main" class="col-xs-8"><!-- Start song bar on right -->
 					
-					<div>
-						<ul id="songs">
-						</ul>
-					</div>
-					
+					<div id="song--0" class="song">
+		      			<h2 class="songTitle">SONG_NAME</h2><br>
+		      			<ul class="songInfo">
+		       				<li class="col-xs-12 col-sm-2">SONG_ARTIST</li>
+		       				<li class="col-xs-12 col-sm-2">SONG_ALBUM</li>
+		        			<li class="col-xs-12 col-sm-2"><input type="button" id="deleteButton--!" value="delete"></li>
+		      			</ul>
+
+	    			</div>
+				
 				</section><!-- End songlist bar -->
+			
 			</div>	
 	</section><!--End Home(View Music) page-->	
 	
@@ -123,8 +128,9 @@
 	</section>	
 		
 
-<script type="text/javascript" src="javascripts/home.js"></script>
-<script type="text/javascript" src="javascripts/add.js"></script>
+<!-- <script type="text/javascript" src="javascripts/home.js"></script> -->
+	<script type="text/javascript" src="javascripts/add.js"></script> 
+	<script type="text/javascript" src="javascripts/main.js"></script>
 
 </body>
 	

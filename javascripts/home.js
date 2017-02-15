@@ -20,15 +20,15 @@ var element = document.getElementById("songs");
 var counter = 0;
 
 //Downloaded song list//
-songs[songs.length] = "Legs > by Z*ZTop on the album Eliminator";
-songs[songs.length] = "The Logical Song > by Supertr@amp on the album Breakfast in America";
-songs[songs.length] = "Another Brick in the Wall > by Pink Floyd on the album The Wall";
-songs[songs.length] = "Welco(me to the Jungle > by Guns & Roses on the album Appetite for Destruction";
-songs[songs.length] = "Ironi!c > by Alanis Moris*ette on the album Jagged Little Pill";
+//songs[songs.length] = "Legs > by Z*ZTop on the album Eliminator";
+//songs[songs.length] = "The Logical Song > by Supertr@amp on the album Breakfast in America";
+//songs[songs.length] = "Another Brick in the Wall > by Pink Floyd on the album The Wall";
+//songs[songs.length] = "Welco(me to the Jungle > by Guns & Roses on the album Appetite for Destruction";
+//songs[songs.length] = "Ironi!c > by Alanis Moris*ette on the album Jagged Little Pill";
 
 //Add 1 song to beginning and 1 to end of array//
-songs.unshift("Sugar Magnolia > by Grateful Dead on the album American Beauty");
-songs.push("What's Going On > by Marvin Gaye on the album The Best of Marvin Gaye")
+//songs.unshift("Sugar Magnolia > by Grateful Dead on the album American Beauty");
+//songs.push("What's Going On > by Marvin Gaye on the album The Best of Marvin Gaye")
 
 //console.log("songs with respective artist and album names")
 
@@ -46,8 +46,8 @@ function findLetters() {
 			var keyName = 'song' + counter;
 
 			//remove or replace unwanted characters//
-			var x = songs[i].replace(/>/g, "-");
-			var y = x.replace(/\*|!|@|\(|/g, "");
+			//var x = songs[i].replace(/>/g, "-");
+			//var y = x.replace(/\*|!|@|\(|/g, "");
 
 			//Add new song string to list//
 			newSongs += y += "<br>";
