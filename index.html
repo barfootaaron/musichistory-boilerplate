@@ -6,21 +6,25 @@
 	<title>Music History</title>
 	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 	<script src="lib/node_modules/jquery/dist/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="lib/node_modules/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 	
 <body>
 	<header class="row">
 		<div id="nav-bar" class="col-xs-12">	
-		<nav>
-			<ul>
-				<li><a href="#" id="list-music">List Music</a></li>
-				<li><strong> | </strong></li>
-				<li><a href="#" id="add-music">Add Music</a></li>
-				<li><strong> | </strong></li>
-				<li><a href="#">Profile</a></li>
-			</ul>
-		</nav>	
+			<nav>
+				<ul>
+					<li><a href="#" id="list-music">List Music</a></li>
+					<li><strong> | </strong></li>
+					<li><a href="#" id="add-music">Add Music</a></li>
+					<li><strong> | </strong></li>
+	         	<li><a class="is-hidden" href="#" title="">Profile</a></li>
+<!-- 					<li><strong> | </strong></li> -->
+					<button id="login-btn" class="btn btn-primary"><a href="#" title="">Sign In</a></button>
+	         	<button id="logout-btn" class="btn btn-primary is-hidden"><a href="#" title="">Sign Out</a></button>
+				</ul>
+			</nav>	
 		</div>	
 	</header>	
 
@@ -29,7 +33,7 @@
 				
 		<div id="row">
 
-			<div class="col-xs-4"><!--Start filter column on left-->
+			<div class="col-xs-3"><!--Start filter column on left-->
 				<div>
 					<label for="songLength">Song length:</label><br>
 					<input type="range" id="songLengthSlider" min="0.01" max="10:00" value="5:00" step=":30">
@@ -46,7 +50,6 @@
 						<option>Guns n Roses</option>
 						<option>Alanis Morisette</option>
 						<option>Marvin Gaye</option>
-						<option></option>
 					</select>
 				</div>
 					
@@ -64,9 +67,8 @@
 					</select>
 				</div>
 					
-				<div id="genre-select" class="row">	
-					<label for="genre">Genre:</label><br>
-						
+				<div>	
+						<label id="genreSelectLabel">Genre:</label><br>
 						<div id="radio-col1" class="col-xs-5">
 							<input type="checkbox" class="checkbox-primary" name="genre" value="rock">
 							<label>Rock</label><br>
@@ -86,54 +88,22 @@
 							<label>Hip Hop</label><br>
 							
 							<input type="checkbox" class="checkbox-primary" name="genre" value="classical">
-							<label>Classical</label><br>
+							<label>Alternative</label><br>
 						</div>	
 						
 						<button type="button" id="filterButton">Filter songs</button>
 					</div>
-				</div><!-- End filter bar on left -->
-					
-				<section id="songContainer" class="col-xs-8"><!-- Start song bar on right -->
-		      		
-		      		<div id="songsDiv"></div>
-
-	    			<div id="more-button-div">
-						<button type="button" id="moreButton">Load Songs</button>
-					</div>
-				
-				</section><!-- End songlist bar -->
-			
-			</div>	
-	</section><!-- End List-View -->	
-	
-	<!--Start Add Music page-->
-	<section class="hidden row" id="add-view">
-		
-		<div id="add-view-body" class="col-xs-12">
-
-				<div id="addSongForm">
-					<h2>Add new song</h2>
-					<br>
-
-					<label class="addPgLabels">Enter a song name:</label><br>
-					<input type="text" id="songNameEntered"><br>
-
-					<label class="addPgLabels">Artist name:</label><br>
-					<input type="text" id="artistNameEntered"><br>
-
-					<label class="addPgLabels">Album name:</label><br>
-					<input type="text" id="albumNameEntered"><br>
-
-					<label class="addPgLabels">Genre:</label><br>
-					<input type="text" id="genreEntered"><br>
-
-					<button id="addButton" type="input">Add</button>
 				</div>
-
-		</div>	
-	
-	</section>	
+				<!-- End filter bar on left -->
+					
+				<!-- Start song list/song form-->	
+				<section id="songContainer" class="col-xs-9 row">
+		      		<div class="uiContainer--wrapper col-xs-12"></div>
+				</section>
+				<!-- End songlist bar -->
+			</div>
 		
+	<script type="text/javascript" src="lib/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>	
 	<script type="text/javascript" src="dist/app.js"></script>
 
 </body>
