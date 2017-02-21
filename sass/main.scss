@@ -1,0 +1,286 @@
+/* BASE STYLE */ 
+body {
+	font-family: 'Varela Round', sans-serif;
+	width: 95% !important;
+}
+
+/* Header-Nav */
+nav {
+	margin: 20px 15px 15px 20px;
+}
+
+#login-btn,
+#logout-btn {
+	background-color: #c5cae9;
+	border-color: #c5cae9;
+	border-radius: 5px;
+}
+
+#login-btn a,
+#logout-btn a {
+	background-color: #c5cae9;
+}
+
+#nav-bar {
+	border: 3px solid black;
+	background-color: #e0e0e0;
+	text-align: left;
+	height: 5em;
+	margin: 1em;
+	background-color: #e0e0e0;
+	padding-top: 1.5px;
+	list-style-type: none;
+	width: 90%;
+}
+
+#nav-bar a {
+	text-decoration: none;
+	margin: 50% auto 50% auto !important;
+}
+
+.col-xs-12 ul {
+	text-align: left;
+	padding: 0;
+
+}
+
+nav li {
+	padding-right: .3em;
+	display: inline-block;
+	text-align: left;
+}
+
+a:visited {
+	color: black;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+
+/* Begin Body Styling */ 
+/* Filter bar on left of body */
+.col-xs-3 {
+	float: left;
+	display: inline-block;
+	width: 30em;
+	max-width: 28%;
+	min-width: 150px;
+	max-height: 100%;
+	border: 3px solid;
+	height: 35em;
+	background-color: #80cbc4;
+	margin: 1em;
+	margin-top: 0 !important;
+	padding-top: 1em;
+	padding-left: 1em;
+	padding-bottom: 1em;
+	line-height: 2em;
+}
+
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 90%;
+  height: 7px !important;
+  border-radius: 8px;
+  height: 10px;
+  border: 3px solid black;
+  background-color: #fff;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: .5em;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 3px solid black;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  background-color: lightgrey;
+}
+
+input[type="range"]::-moz-range-progress {
+  background-color: grey; 
+ } 
+
+select {
+	width: 90%;
+	position: center;
+}
+
+#radio-col1 {
+	display: inline-block;
+	width: 40%;
+	padding: 3px;
+}
+
+#radio-col2 {
+	display: inline-block;
+	width: 40%;
+	padding: 3px;
+}
+
+#radio-col1,
+#radio-col2 {
+	line-height: 2em;
+	margin: 5px;
+}
+
+// #genre-select label {
+// 	margin-bottom: 0px;
+// }
+
+input[type="checkbox"] {
+	height: 15px;
+	width: 15px;
+	background-color: white;
+	border: 3px solid black;
+	padding: 6px;
+	border-radius: 5px;
+	margin: .8em 4px 0 4px;
+	text-align: center;
+}
+
+
+.is-hidden {
+	display: none;
+}
+
+#artistSelect,
+#albumSelect {
+	line-height: 50em;
+}
+
+#filterButton,
+#moreButton,
+#addButton {
+	border: solid 3px black;
+	background-color: lightgrey;
+	border-radius: 5px;
+	width: 12em;
+	height: 35px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 1.1em;
+	margin-top: 10%;
+}
+
+
+/* Songlist bar on right of body */
+.col-xs-9 {
+	display: inline-block;
+	border: 3px solid black;
+	background-color: #b3e5fc;
+	height: 100%;
+	padding-left: 0em;
+	width: 75em;
+	max-width: 60%;
+	line-height: 3em;
+	margin: 0em !important;
+}
+
+.col-sm-2 {
+	margin-right: 2em;
+}
+
+#songContainer {
+	font-size: .9em;
+	margin-left: 0;
+	padding: 2em;
+}
+
+hr {
+	color: lightgrey !important;
+}
+
+/* Styling for add and list pages */
+
+ul > li {
+	display: inline;
+	list-style-type: none;
+}
+
+.visible {
+	display: block;
+}
+
+.is-hidden {
+	display: none !important;
+}
+
+
+.row {
+	width: 100% !important;
+}
+
+h1 {
+	font-size: 25px;
+}
+
+.delete {
+	height: 30px;
+	width: 80px;
+	margin-left: 10%;
+	margin-right: 30%;
+	display: inline;
+	border-radius: 4px;
+}
+
+.addedSong li {
+	margin: .6em;
+}
+
+.form-field {
+	border: 2px solid black;
+}
+
+.song__song-list, 
+.song-list,
+.song-title {
+	color: black !important;
+   font-size: 2.5rem;
+   margin-bottom: 0.5rem; 
+}
+
+.song-list__item .song-list .delete-btn {
+   background: grey;
+   width: 80px;
+   padding: 0; 
+}
+
+.song-list {
+	width: 100%;
+	height: 30em;
+	overflow: scroll;
+}
+
+.form-field {
+	border: 1px solid black;
+	width: 40em;
+	height: 2em;
+	padding: 10px;
+	margin-bottom: 1.5em;
+}
+
+.addFormLabel {
+	margin-top: 15px !important;
+}
+
+.btn-default {
+	margin: 1em !important;
+	border: 2px solid grey !important;
+	border-radius: 5px !important;
+}
+
+.song-hr {
+	margin: 10px 20px 10px 20px !important;
+}
+
+.btn-success {
+	background-color: #b0bec5;
+	border: none !important;
+	margin: .7em;
+}
+
