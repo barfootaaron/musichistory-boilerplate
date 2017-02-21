@@ -233,4 +233,10 @@ h1 {
   border: none !important;
   margin: .7em; }
 
+.save_edit_btn,
+.save_new_btn {
+  border: 3px solid grey;
+  border-radius: 5px;
+  color: white; }
+
 /*# sourceMappingURL=main.css.map */

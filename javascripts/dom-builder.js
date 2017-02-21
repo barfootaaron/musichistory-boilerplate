@@ -53,16 +53,16 @@ function songForm(song, songId) {
     },
     form =
       `<h3>${songItem.formName}</h3>
-      <label class="addFormLabel">Song Title</label><br>
+      <label class="addFormLabel">Song Title:</label><br>
       <input type="text" class="form-field" id="form--name" placeholder="name" value="${songItem.name}"></input><br>
 
-      <label class="addFormLabel">Artist</label><br>
+      <label class="addFormLabel">Artist:</label><br>
       <input type="text" class="form-field" id="form--artist" placeholder="artist" value="${songItem.artist}"></input><br>
 
-      <label class="addFormLabel">Album</label><br>
+      <label class="addFormLabel">Album:</label><br>
       <input type="text" class="form-field" id="form--album" placeholder="album" value="${songItem.album}"></input><br>
 
-      <label class="addFormLabel">Year Released</label><br>
+      <label class="addFormLabel">Year Released:</label><br>
       <input type="text" class="form-field" id="form--year" placeholder="year" value="${songItem.year}"></input><br>
 
       <label class="addFormLabel">Genre:</label><br>

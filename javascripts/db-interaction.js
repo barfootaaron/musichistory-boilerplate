@@ -37,8 +37,6 @@ function getSongs(user) {
 // 
 
 
-
-
 function addSong(songFormObj) {
 	console.log("addSong", songFormObj);
 	return new Promise(function(resolve, reject){
